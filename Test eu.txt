@@ -1,0 +1,28 @@
+from math import trunc
+import random
+
+i = 0
+rola_A = [1, 2, 3]
+rola_B = [1, 2, 3]
+rola_C = [1, 2, 3]
+
+
+def display():
+      a = random.sample(rola_A, 1)
+      b = random.sample(rola_B, 1)
+      c = random.sample(rola_C, 1)
+
+      print(a, b, c)
+      if a == b == c:
+            print("ai castigat")
+            return True
+
+      else:
+            print("ai pierdut")
+            return False
+    
+
+while display() == False:
+      i +=1
+      display()
+      print(i)
